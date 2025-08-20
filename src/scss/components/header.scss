@@ -1,0 +1,369 @@
+@use "../base/mixins" as *;
+@use "../variables" as *;
+
+//====================================================================================================
+.header {
+  &___container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top-header {
+    width: 100%;
+    padding: rem(57) 0 rem(65);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(20);
+
+    transition: all .3s ease-in-out;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding: rem(35) 0;
+    }
+  }
+
+  &__logo {
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: left;
+    color: $greenColor;
+
+    cursor: pointer;
+
+    span {
+      color: $blackFontColor;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(20);
+    transition: all .3s ease-in-out;
+
+    @media (max-width: 1080px) {
+      gap: rem(15);
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+
+    @media (max-width: $mobileMedium) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(15);
+
+    max-width: rem(250);
+    padding: rem(18) rem(36) rem(19);
+    box-sizing: border-box;
+    border: 1px solid $greenColor;
+    border-radius: rem(30);
+
+    font-size: rem(16);
+    font-weight: 500;
+    letter-spacing: 0;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      border-bottom-left-radius: rem(5);
+      border-top-right-radius: rem(5);
+    }
+
+    @media (max-width: 1080px) {
+      padding: rem(18) rem(24) rem(19);
+    }
+
+    span {
+      transition: all .3s ease-in-out;
+    }
+
+    @media (max-width: $tablet) {
+      span {
+        font-size: rem(0);
+      }
+    }
+
+    @media (max-width: $mobileMedium) {
+      max-width: 100%;
+      width: 100%;
+      gap: rem(15);
+      span {
+        font-size: rem(16);
+      }
+    }
+  }
+
+  &__card {
+    color: $blackFontColor;
+
+    span {
+      margin-left: rem(-10);
+    }
+  }
+
+  &__login {
+    background-color: $greenColor;
+    @media (max-width: $tablet) {
+      gap: rem(0);
+    }
+    @media (max-width: $mobileMedium) {
+      gap: rem(15);
+    }
+
+    span {
+      color: $whiteFontColor;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: rem(28) 0;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200vw;
+      height: 100%;
+      background-color: $greenColor;
+      z-index: -1;
+    }
+
+    @media (max-width: $mobile) {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(15);
+
+  padding: rem(12) rem(18) rem(12) rem(32);
+
+  border-radius: rem(10);
+  box-shadow: 0 rem(2) rem(5) 0 rgba(46, 131, 158, 0.07);
+  background: rgba(255, 255, 255, 1);
+
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    height: rem(37);
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 24px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: rgba(41, 41, 48, 0.2);
+      font-size: rem(16);
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(8);
+    background-color: $greenColor;
+    border-radius: rem(5);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: rem(0);
+      left: rem(0);
+      width: rem(37);
+      height: rem(37);
+      border-radius: rem(5);
+      border: rem(2) solid #10B981;
+      transform: rotate(0deg) scale(0.5);
+      transition: all .2s ease-in-out 0.1s;
+    }
+
+    &:hover {
+      &::before {
+        top: rem(-4);
+        left: rem(-4);
+        transform: rotate(90deg) scale(1);
+      }
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__body {
+    @media (max-width: $mobile) {
+      transition: all .3s linear .4s;
+      position: absolute;
+      top: rem(72);
+      left: -200%;
+      background-color: $greenColor;
+      width: 320px;
+      height: 100vh;
+      padding: rem(20);
+    }
+  }
+
+  .show-menu {
+    transition: all .3s linear;
+    left: rem(-22);
+
+    .menu__link {
+      opacity: 1;
+      transition: all .3s linear .4s;;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(25) rem(75);
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $whiteFontColor;
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    @media (max-width: $mobile) {
+      transition: all .3s ease;
+      opacity: 0.5;
+    }
+
+    span {
+      transition: all .4s ease-in-out;
+    }
+
+    &:hover {
+      span {
+        color: $blackFontColor;
+      }
+    }
+  }
+}
+
+
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+  display: none;
+  @media (max-width: $mobile) {
+    display: block;
+    position: relative;
+    width: rem(30);
+    height: rem(18);
+    cursor: pointer;
+    z-index: 5;
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: rem(2);
+      background-color: #fff;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: calc(50% - rem(1));
+    }
+    .menu-open & {
+      span {
+        width: 0;
+      }
+
+      &::before,
+      &::after {
+      }
+
+      &::before {
+        top: calc(50% - rem(1));
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: calc(50% - rem(1));
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+

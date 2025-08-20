@@ -1,0 +1,6 @@
+// Подключение стилей отдельных блоков
+@use "components/header";
+@use "components/footer";
+
+// Подключение стилей отдельных страниц
+@use "pages/home";

@@ -1,0 +1,47 @@
+%ic {
+	font-family: 'icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+
+.icon-facebook:before {
+	content: "\e900";
+}
+.icon-instagram:before {
+	content: "\e901";
+}
+.icon-twitter:before {
+	content: "\e902";
+}
+.icon-Arrow:before {
+	content: "\e903";
+	color: #fff;
+}
+.icon-card:before {
+	content: "\e904";
+	color: #10b981;
+}
+.icon-search:before {
+	content: "\e905";
+	color: #fff;
+}
+.icon-Star:before {
+	content: "\e906";
+	color: #ffd600;
+}
+.icon-User:before {
+	content: "\e907";
+	color: #fff;
+}

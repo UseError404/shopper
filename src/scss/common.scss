@@ -1,0 +1,62 @@
+@use "variables" as *;
+@use "base/mixins" as *;
+// Заголовки, общие БЄМ блоки и проче...
+* {
+  transition: all .3s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+p {
+  -webkit-line-clamp: 2;
+
+  @media (max-width: $tablet) {
+    -webkit-line-clamp: 4;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $whiteFontColor;
+  font-size: rem(21);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+
+  padding: rem(22);
+  min-width: rem(260);
+  border-radius: rem(10);
+  background: $greenColor;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 rem(5) rem(5) 0 rgba(46, 131, 158, 0.07);
+
+
+  &:hover {
+    border-radius: rem(30) rem(5) rem(30) rem(5);
+  }
+}
+
+.btn-opacity {
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: border .3s ease,
+  border-radius .3s ease .1s,
+  background-color .3s ease .3s;
+
+  &:hover {
+    background-color: $greenColor;
+    border: 2px solid $greenColor;
+  }
+}

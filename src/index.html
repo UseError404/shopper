@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Shopper"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+        <section class="latest-products">
+            <div class="latest-products__container">
+                <div class="latest-products__wrap">
+                    <div class="latest-products__left">
+                        <h1 class="latest-products__title">Discover Our Latest Products</h1>
+                        <p class="latest-products__text">Lorem ipsum is a placeholder text commonly used to demonstrate
+                            the visual form of a product</p>
+                        <a href="#" class="latest-products__btn btn">Buy Now</a>
+
+                        <div class="latest-products__users">
+                            <div class="latest-products__users-container">
+                                <div class="latest-products__user">
+                                    <picture class="latest-products__user-img">
+                                        <source srcset="img/users/user1.avif" type="image/avif">
+                                        <source srcset="img/users/user1.webp" type="image/webp">
+                                        <img src="img/users/user1.png" alt="user" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="latest-products__user">
+                                    <picture class="latest-products__user-img">
+                                        <source srcset="img/users/user2.avif" type="image/avif">
+                                        <source srcset="img/users/user2.webp" type="image/webp">
+                                        <img src="img/users/user2.png" alt="user" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="latest-products__user">
+                                    <picture class="latest-products__user-img">
+                                        <source srcset="img/users/user3.avif" type="image/avif">
+                                        <source srcset="img/users/user3.webp" type="image/webp">
+                                        <img src="img/users/user3.png" alt="user" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="latest-products__user">
+                                    <picture class="latest-products__user-img">
+                                        <source srcset="img/users/user4.avif" type="image/avif">
+                                        <source srcset="img/users/user4.webp" type="image/webp">
+                                        <img src="img/users/user4.png" alt="user" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                            <p class="latest-products__users-text">15k Well Reviews</p>
+                        </div>
+                    </div>
+                    <div class="latest-products__right">
+
+                        <div class="latest-products__product">
+                            <div class="latest-products__flowing-text">
+                                <svg viewBox="-30 -50 350 250" width="370" height="420">
+                                    <path
+                                            id="text-curve"
+                                            d="M20.5 270L0.5 134L7 101.5L18.5 72.5L39.5 45.5L66 23L95.5 8L123.5 0.5L142 0.5L157 0.5L181.5 4L206.5 15L225 23L245.5 39L255.5 45.5L262 54.5L270.5 66"
+                                            fill="transparent"
+                                    />
+                                    <text>
+                                        <textPath
+                                                href="#text-curve"
+                                                startOffset="15%"
+                                                method="align"
+                                                spacing="auto"
+                                        >
+                                            Red Beats M19c2zm/a
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
+                            <picture class="latest-products__product-img">
+                                <source srcset="img/latest-product/product.avif" type="image/avif">
+                                <source srcset="img/latest-product/product.webp" type="image/webp">
+                                <img src="img/latest-product/product.png" alt="Беспроводные наушники Red Beats M19c2zm/a" loading="lazy">
+                            </picture>
+                            <div class="latest-products__price">$50</div>
+                        </div>
+                        <div class="latest-products__stars">
+                            <div class="latest-products__star latest-products__star1">
+                                <img src="img/icons/star.svg" alt="star"
+                                     class="latest-products__star-img">
+                            </div>
+                            <div class="latest-products__star latest-products__star2">
+                                <img src="img/icons/star.svg" alt="star"
+                                     class="latest-products__star-img">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="featured-products__container">
+                <div class="featured-products__wrap">
+                    <div class="featured-products__left">
+                        <h2 class="featured-products__title featured-products__title-border">Apple wireless Airpod</h2>
+                        <div class="featured-products__wrap-images">
+                            <div class="featured-products__img">
+                                <picture class="featured-products__user-img">
+                                    <source srcset="img/featured-products/prod1.avif" type="image/avif">
+                                    <source srcset="img/featured-products/prod1.webp" type="image/webp">
+                                    <img src="img/featured-products/prod1.png" alt="Airpod" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="featured-products__img">
+                                <picture class="featured-products__user-img">
+                                    <source srcset="img/featured-products/prod2.avif" type="image/avif">
+                                    <source srcset="img/featured-products/prod2.webp" type="image/webp">
+                                    <img src="img/featured-products/prod2.png" alt="Airpod" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="featured-products__img">
+                                <picture class="featured-products__user-img">
+                                    <source srcset="img/featured-products/prod3.avif" type="image/avif">
+                                    <source srcset="img/featured-products/prod3.webp" type="image/webp">
+                                    <img src="img/featured-products/prod3.png" alt="Airpod" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                        <p class="featured-products__price">Price : <span>$45.99</span></p>
+                    </div>
+                    <div class="featured-products__right">
+                        <h3 class="featured-products__title">Our Featured Products</h3>
+                        <p class="featured-products__text">Lorem ipsum is a placeholder text commonly used to
+                            demonstrate the visual form of a product</p>
+                        <div class="featured-products__wrap-btns">
+                            <a href="#" class="featured-products__btn btn">Add to cart</a>
+                            <a href="#" class="featured-products__btn btn btn-opacity">View more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sellers">
+            <div class="sellers__container">
+                <h2 class="sellers__title">Top Sellers</h2>
+
+                <div class="sellers__buttons-switch">
+                    <button class="sellers__btn btn sellers__btn--active">Top Picks</button>
+                    <button class="sellers__btn sellers__btn-opacity btn">Watches</button>
+                </div>
+
+                <div class="sellers__swiper swiper swiper-products">
+                    <div class="swiper-wrapper swiper-products__wrapper">
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-whiteSliderColor">
+                                <div class="swiper-products__save swiper-products__save-greenColor">Save 60%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/sellers-swiper/slide1.avif" type="image/avif">
+                                        <source srcset="img/sellers-swiper/slide1.webp" type="image/webp">
+                                        <img src="img/sellers-swiper/slide1.png"
+                                             alt="Boat Rockerz 333" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 333</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$20</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-blueSliderColor">
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/sellers-swiper/slide2.avif" type="image/avif">
+                                        <source srcset="img/sellers-swiper/slide2.webp" type="image/webp">
+                                        <img src="img/sellers-swiper/slide2.png"
+                                             alt="Boat kerz 234" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat kerz 234</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$40</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-purpleSliderColor">
+                                <div class="swiper-products__save swiper-products__save-purpleColor">Save 40%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/sellers-swiper/slide3.avif" type="image/avif">
+                                        <source srcset="img/sellers-swiper/slide3.webp" type="image/webp">
+                                        <img src="img/sellers-swiper/slide3.png"
+                                             alt="Boat Rockerz 323" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 323</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$30</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-whiteSliderColor">
+                                <div class="swiper-products__save swiper-products__save-greenColor">Save 60%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/sellers-swiper/slide1.avif" type="image/avif">
+                                        <source srcset="img/sellers-swiper/slide1.webp" type="image/webp">
+                                        <img src="img/sellers-swiper/slide1.png"
+                                             alt="Boat Rockerz 333" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 333</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$20</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-blueSliderColor">
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/sellers-swiper/slide2.avif" type="image/avif">
+                                        <source srcset="img/sellers-swiper/slide2.webp" type="image/webp">
+                                        <img src="img/sellers-swiper/slide2.png"
+                                             alt="Boat kerz 234" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat kerz 234</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$40</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-purpleSliderColor">
+                                <div class="swiper-products__save swiper-products__save-purpleColor">Save 40%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/sellers-swiper/slide3.avif" type="image/avif">
+                                        <source srcset="img/sellers-swiper/slide3.webp" type="image/webp">
+                                        <img src="img/sellers-swiper/slide3.png"
+                                             alt="Boat Rockerz 323" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 323</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$30</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev sellers__swiper-button-prev swiper-products__swiper-button-prev"></div>
+                    <div class="swiper-button-next sellers__swiper-button-next swiper-products__swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trend">
+            <div class="trend__container">
+                <h2 class="trend__title">Trending Earphones</h2>
+
+                <div class="trend__buttons-switch">
+                    <button class="trend__btn btn trend__btn--active">Earbuds</button>
+                    <button class="trend__btn btn sellers__btn-opacity">Wireless</button>
+                    <button class="trend__btn btn sellers__btn-opacity">Wired</button>
+                </div>
+
+                <div class="trend__swiper swiper swiper-products">
+                    <div class="swiper-wrapper swiper-products__wrapper">
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-blueWhiteSliderColor">
+                                <div class="swiper-products__save swiper-products__save-greenColor">Save 60%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/trend-swiper/slide1.avif" type="image/avif">
+                                        <source srcset="img/trend-swiper/slide1.webp" type="image/webp">
+                                        <img src="img/trend-swiper/slide1.png"
+                                             alt="Boat Rockerz 333" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 333</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$20</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-birchSliderColor">
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/trend-swiper/slide2.avif" type="image/avif">
+                                        <source srcset="img/trend-swiper/slide2.webp" type="image/webp" >
+                                        <img src="img/trend-swiper/slide2.png"
+                                             alt="Boat kerz 234" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat kerz 234</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$40</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-birchWhiteSliderColor">
+                                <div class="swiper-products__save swiper-products__save-greyColor">Save 40%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/trend-swiper/slide3.avif" type="image/avif">
+                                        <source srcset="img/trend-swiper/slide3.webp" type="image/webp">
+                                        <img src="img/trend-swiper/slide3.png"
+                                             alt="Boat Rockerz 323" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 323</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$30</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-blueWhiteSliderColor">
+                                <div class="swiper-products__save swiper-products__save-greenColor">Save 60%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/trend-swiper/slide1.avif" type="image/avif">
+                                        <source srcset="img/trend-swiper/slide1.webp" type="image/webp">
+                                        <img src="img/trend-swiper/slide1.png"
+                                             alt="Boat Rockerz 333" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 333</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$20</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-birchSliderColor">
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/trend-swiper/slide2.avif" type="image/avif">
+                                        <source srcset="img/trend-swiper/slide2.webp" type="image/webp" >
+                                        <img src="img/trend-swiper/slide2.png"
+                                             alt="Boat kerz 234" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat kerz 234</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$40</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                        <div class="swiper-slide swiper-products__slide">
+                            <div class="swiper-products__slide-container swiper-products__slide-birchWhiteSliderColor">
+                                <div class="swiper-products__save swiper-products__save-greyColor">Save 40%</div>
+                                <div class="swiper-products__img-container">
+                                    <picture class="swiper-products__img">
+                                        <source srcset="img/trend-swiper/slide3.avif" type="image/avif">
+                                        <source srcset="img/trend-swiper/slide3.webp" type="image/webp">
+                                        <img src="img/trend-swiper/slide3.png"
+                                             alt="Boat Rockerz 323" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="swiper-products__info-box">
+                                    <h3 class="swiper-products__title-slide">Boat Rockerz 323</h3>
+
+                                    <div class="swiper-products__rating">
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active">
+
+                                                </div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item"
+                                                           value="1" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="2" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="3" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="4" name="rating">
+                                                    <input type="radio" class="rating__item"
+                                                           value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <p class="swiper-products__reviews">75 Reviews</p>
+                                    </div>
+                                    <div class="swiper-products__price">$30</div>
+                                </div>
+                            </div>
+                            <button class="swiper-products__slide-btn btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev trend__swiper-button-prev swiper-products__swiper-button-prev"></div>
+                    <div class="swiper-button-next trend__swiper-button-next swiper-products__swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="launch"d>
+            <div class="launch__container">
+                <h2 class="launch__title">New Launches</h2>
+
+                <div class="launch__background">
+                    <div class="launch__slider swiper">
+                        <div class="launch__wrapper swiper-wrapper">
+                            <div class="launch__slide swiper-slide">
+                                <div class="launch__slide-wrap">
+                                    <div class="launch__slide-left">
+                                        <div class="launch__slide-container-images launch__slide-container-images-active"
+                                             data-color="black">
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop1.avif" type="image/avif">
+                                                    <source srcset="img/launch/Airdrop1.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop1.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop2.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop2.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="launch__slide-container-images" data-color="yellow">
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop2.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop2.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop2.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop2.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="launch__slide-container-images" data-color="blue">
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop1.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop1.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop1.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop1.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="launch__slide-right">
+                                        <h3 class="launch__slide-title">Airdrop 500 Anc</h3>
+                                        <div class="launch__slide-text">Lorem ipsum is a placeholder text commonly used
+                                            to demonstrate the visual form of a product ... Read More
+                                        </div>
+                                        <div class="launch__slide-price">Price : <span>$45 .99</span></div>
+                                        <div class="launch__wrap-colors">
+                                            <button class="launch__colors launch__colors-black launch__colors-active"
+                                                    data-color="black"></button>
+                                            <button class="launch__colors launch__colors-yellow"
+                                                    data-color="yellow"></button>
+                                            <button class="launch__colors launch__colors-blue"
+                                                    data-color="blue"></button>
+                                        </div>
+                                        <div class="launch__wrap-buttons">
+                                            <button class="launch__wrap-button btn">Add to cart</button>
+                                            <a href="#" class="launch__wrap-link btn btn-opacity">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="launch__slide swiper-slide">
+                                <div class="launch__slide-wrap">
+                                    <div class="launch__slide-left">
+                                        <div class="launch__slide-container-images launch__slide-container-images-active"
+                                             data-color="black">
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop1.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop1.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop2.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop2.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="launch__slide-container-images" data-color="yellow">
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop2.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop2.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop2.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop2.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="launch__slide-container-images" data-color="blue">
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop1.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop1.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                            <div class="launch__slide-image">
+                                                <picture class="launch__slide-img">
+                                                    <source srcset="img/launch/Airdrop1.webp" type="image/webp">
+                                                    <img src="img/launch/Airdrop1.png" alt="Airdrop" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="launch__slide-right">
+                                        <h3 class="launch__slide-title">Airdrop 500 Anc</h3>
+                                        <div class="launch__slide-text">Lorem ipsum is a placeholder text commonly used
+                                            to demonstrate the visual form of a product ... Read More
+                                        </div>
+                                        <div class="launch__slide-price">Price : <span>$45 .99</span></div>
+                                        <div class="launch__wrap-colors">
+                                            <button class="launch__colors launch__colors-black launch__colors-active"
+                                                    data-color="black"></button>
+                                            <button class="launch__colors launch__colors-yellow"
+                                                    data-color="yellow"></button>
+                                            <button class="launch__colors launch__colors-blue"
+                                                    data-color="blue"></button>
+                                        </div>
+                                        <div class="launch__wrap-buttons">
+                                            <button class="launch__wrap-button btn">Add to cart</button>
+                                            <a href="#" class="launch__wrap-link btn btn-opacity">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="swiper-button-prev launch__swiper-button-prev"></button>
+                        <button type="button" class="swiper-button-next launch__swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>
